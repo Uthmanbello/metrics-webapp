@@ -3,16 +3,15 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   const navlinks = [
 
-    { path: '/', text: 'Rockets' },
-    { path: '/missions', text: 'Missions' },
-    { path: '/profile', text: 'My profile' },
+    { path: '/', text: 'Home' },
+    { path: '/details', text: 'Details' },
 
   ];
   return (
-    <nav className={styles.navbar_container}>
-      <div className={styles.navbar}>
-        <div className={styles.navbar__content}>
-          <ul className={styles.navbar__list}>
+    <nav>
+      <div>
+        <div>
+          <ul>
             {navlinks.map((navlink) => (
               <li key={navlink.text}>
                 <NavLink to={navlink.path} style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : '' })}>{navlink.text}</NavLink>
