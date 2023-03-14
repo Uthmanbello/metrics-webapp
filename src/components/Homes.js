@@ -22,10 +22,10 @@ function Homes() {
     <div>
       <h1>{'Abuja, Nigeria'}</h1>
       {data.coord && <p>Coordinates: {Object.keys(data.coord).length} items</p>}
-      {data.weather && <p>Weather: {Object.keys(data.weather[0]).length}</p>}
-      {data.main && <p>Temperature: {Object.keys(data.main).length}</p>}
-      {data.wind && <p>Wind: {Object.keys(data.wind).length}</p>}
-      {data.sys && <p>System: {Object.keys(data.sys).length}</p>}
+      {data.weather && <p>Weather: {Object.keys(data.weather[0]).length} items</p>}
+      {data.main && <p>Temperature: {Object.keys(data.main).length} items</p>}
+      {data.wind && <p>Wind: {Object.keys(data.wind).length} items</p>}
+      {data.sys && <p>System: {Object.keys(data.sys).length} items</p>}
     </div>
   );
   
