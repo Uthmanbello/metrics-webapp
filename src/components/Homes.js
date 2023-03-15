@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCities } from '../redux/home/homeSlice';
 import { Link, Route, Routes } from 'react-router-dom';
+import './Home.css'
 
 function Homes() {
   const dispatch = useDispatch();
@@ -22,21 +23,23 @@ function Homes() {
   return (
     <div>
       <h1>{'Abuja, Nigeria'}</h1>
+      <div className="home-items">
       <Link to="/coordinates">
-        {data.coord && <p>Coordinates: {Object.keys(data.coord).length} items</p>}
+        {data.coord && <p className="home-item">Coordinates: {Object.keys(data.coord).length} items</p>}
       </Link>
       <Link to="/weather">
-        {data.weather && data.weather[0] && <p>Weather: {Object.keys(data.weather[0]).length}</p>}
+        {data.weather && data.weather[0] && <p className="home-item">Weather: {Object.keys(data.weather[0]).length}</p>}
       </Link>
       <Link to="/temperature">
-        {data.main && <p>Temperature: {Object.keys(data.main).length}</p>}
+        {data.main && <p className="home-item">Temperature: {Object.keys(data.main).length}</p>}
       </Link>
       <Link to="/wind">
-        {data.wind && <p>Wind: {Object.keys(data.wind).length}</p>}
+        {data.wind && <p className="home-item">Wind: {Object.keys(data.wind).length}</p>}
       </Link>
       <Link to="/system">
-        {data.sys && <p>System: {Object.keys(data.sys).length}</p>}
+        {data.sys && <p className="home-item">System: {Object.keys(data.sys).length}</p>}
       </Link>
+      </div>
 
       <Routes>
         <Route path="/coordinates" element={<CoordinatesPage data={data.coord} />} />
