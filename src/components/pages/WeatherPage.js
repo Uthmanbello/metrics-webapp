@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchCities } from "../../redux/home/homeSlice";
 
 function WeatherPage() {
@@ -19,6 +20,7 @@ function WeatherPage() {
     }
         return (
             <div>
+              <Link to="/" className="return">&lt;</Link>
               <h2 className="heading">Weather</h2>
               <p className="cat">2 stats</p>
               <p className='stats'>WEATHER STATS</p>

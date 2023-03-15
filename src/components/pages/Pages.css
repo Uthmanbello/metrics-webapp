@@ -1,3 +1,9 @@
+.return {
+  font-size: 2em;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
 ul {
   margin: 0;
   padding: 0;
