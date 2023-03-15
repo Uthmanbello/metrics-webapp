@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
 import { fetchCities } from "../../redux/home/homeSlice";
 import './Pages.css';
 
@@ -22,7 +25,8 @@ function TemperaturePage() {
     return (
         <div>
           <div>
-          <Link to="/" className="return">&lt;</Link>
+          <Link to="/" className="return"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+          <FontAwesomeIcon icon={faThermometerHalf} style={{ color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px' }}/>
       <h2 className="heading">Temperature</h2>
       <p className="cat">5 stats</p>
       </div>
