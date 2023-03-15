@@ -29,8 +29,6 @@ function WeatherPage() {
               <p className="cat">2 stats</p>
               <p className='stats'>WEATHER STATS</p>
               <ul>
-              {/* <li className="even1 list first"><span>Main</span> {data.weather[0].main}</li>
-              <li className="list"><span>Description</span> {data.weather[0].description}</li> */}
               <li className="even1 list first"><span>Main</span> {data?.weather?.[0]?.main}</li>
 <li className="list"><span>Description</span> {data?.weather?.[0]?.description}</li>
 

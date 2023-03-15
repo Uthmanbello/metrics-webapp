@@ -44,7 +44,7 @@ function Homes() {
         {data.wind && <p className="home-item"><FontAwesomeIcon icon={faWind} style={{ color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px' }}/><span className="item-wrap">Wind <span className="item">{Object.keys(data.wind).length} items</span></span></p>}
       </Link>
       <Link to="/system">
-        {data.sys && <p className="home-item"><FontAwesomeIcon icon={faSun} style={{ color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px' }}/><span className="item-wrap">System <span className="item">{Object.keys(data.sys).length} items</span></span></p>}
+        {data.sys && <p className="home-item last"><FontAwesomeIcon icon={faSun} style={{ color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px' }}/><span className="item-wrap">System <span className="item">{Object.keys(data.sys).length} items</span></span></p>}
       </Link>
       </div>
     </div>

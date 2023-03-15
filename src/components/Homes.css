@@ -39,6 +39,10 @@
   margin-top: -30px;
 }
 
+.last {
+  margin-bottom: 0;
+}
+
 .even {
   background-color: rgba(68, 68, 206, 0.466);
 }
