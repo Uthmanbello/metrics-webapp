@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchCities } from '../redux/home/homeSlice';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import './Homes.css'
 
 function Homes() {
@@ -25,6 +25,7 @@ function Homes() {
   return (
     <div>
       <div>
+      <Link to="/about"><FontAwesomeIcon icon={faInfoCircle} style={{ fontSize: '40px', marginBottom: '-30px', marginLeft: '10px' }}/></Link>
       <h1 className="heading">{'Abuja, Nigeria'}</h1>
       <p className="cat">5 Categories</p>
       </div>
