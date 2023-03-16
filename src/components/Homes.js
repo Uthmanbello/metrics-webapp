@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf, faInfoCircle 
+  faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf, faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons';
 import { fetchCities } from '../redux/home/homeSlice';
 import './Homes.css';
