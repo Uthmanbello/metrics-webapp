@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf, faInfoCircle,
+  faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf, faInfoCircle 
 } from '@fortawesome/free-solid-svg-icons';
 import { fetchCities } from '../redux/home/homeSlice';
 import './Homes.css';
@@ -44,7 +44,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
+                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -64,7 +64,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faCloud}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
+                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -84,7 +84,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faThermometerHalf}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
+                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -104,7 +104,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faWind}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
+                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -124,7 +124,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faSun}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
+                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">

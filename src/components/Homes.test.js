@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit/dist';
 import Homes from './Homes';
 import { fetchCities } from '../redux/home/homeSlice';
+import homeReducer from '../redux/home/homeSlice';
 
 const mockDispatch = jest.fn();
 const mockSelector = jest.fn();
