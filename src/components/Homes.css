@@ -18,10 +18,11 @@
 .stats {
   display: flex;
   align-items: center;
-  background-color:  rgb(68, 68, 206);
+  background-color: rgb(68, 68, 206);
   height: 30px;
   padding-left: 10px;
 }
+
 .home-items {
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +33,7 @@
 .home-item {
   height: 45vw;
   width: 40vw;
-  background-color:  rgb(68, 68, 206);
+  background-color: rgb(68, 68, 206);
   display: flex;
   flex-direction: column;
   padding-left: 38px;
