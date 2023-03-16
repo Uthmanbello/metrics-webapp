@@ -27,7 +27,7 @@ function Homes() {
       <div>
       <Link to="/about"><FontAwesomeIcon icon={faInfoCircle} style={{ fontSize: '40px', marginBottom: '-30px', marginLeft: '10px' }}/></Link>
       <h1 className="heading">{'Abuja, Nigeria'}</h1>
-      <p className="cat">5 Categories</p>
+      <p className="cat">{(Math.floor(data.timezone / 3600) >= 0 ? '+' : '-') + Math.abs(Math.floor(data.timezone / 3600)).toString().padStart(2, '0') + '.' + Math.abs(Math.floor(data.timezone % 3600 / 60)).toString().padStart(2, '0') + ' UTC'}</p>
       </div>
       <p className='stats'>STATS BY CATEGORY</p>
       <div className="home-items">

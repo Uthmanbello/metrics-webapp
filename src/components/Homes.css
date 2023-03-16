@@ -1,9 +1,10 @@
 .heading {
-  height: 35vw;
+  height: 30vw;
   display: flex;
   align-items: center;
   justify-content: right;
   padding-right: 10px;
+  margin-bottom: 30px;
 }
 
 .cat {
@@ -11,7 +12,7 @@
   justify-content: right;
   padding-right: 10px;
   font-size: 1.2rem;
-  margin-top: -18vw;
+  margin-top: -16vw;
 }
 
 .stats {
