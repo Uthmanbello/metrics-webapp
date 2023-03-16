@@ -8,14 +8,12 @@ export const fetchCities = createAsyncThunk(
         `https://api.openweathermap.org/data/2.5/weather?lat=25.21490645&lon=55.174787069501136&appid=ae7d13e04687fe4d2aa4951eff32b8bd`
       );
       const data = await response.json();
-      console.log(data)
       return data;
     } catch (error) {
       throw Error('Unable to fetch cities');
     }
   }
 );
-
 
 const initialState = {
   data: [],

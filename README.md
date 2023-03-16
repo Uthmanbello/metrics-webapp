@@ -1,4 +1,69 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <br/>
+
+  <h3><b>Weather App</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+  - [Key Features](#key-features)
+  - [💻 Presentation](#presentation)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Weather App] <a name="about-project"></a>
+
+**[Weather App]** is a project that uses a Single Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category
+
+## 🛠 Built With <a name="built-with"></a>
+-HTML
+-CSS
+-JavaScript
+-ReactJS
+-Redux
+
+### Key Features <a name="key-features"></a>
+
+- **[The project was built using ES6]**
+- **[Modules were imported/exported for the JavaScript]**
+- **[Webpack bundling was used]**
+- **[ReactJS environment was employed]**
+- **[Redux toolkit was employed]**
+- **[OpenWeather API was consumed]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Presentation <a name="presentation"></a>
+
+Click for presentation [Weather App Presentation](https://).
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +133,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Author <a name="authors"></a>
+
+👤 **Uthman Igein Bello-Imoukhuede**
+
+- GitHub: [Uthmanbello](https://github.com/Uthmanbello)
+- Twitter: [@UthmanDeRoyale](https://twitter.com/UthmanDeRoyale)
+- LinkedIn: [Uthman Igein Bello-Imoukhuede](linkedin.com/in/uthman-igein-bello-imoukhuede)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+🔭 Future Feature
+- **[Addition of the pages]**
+- **[Addition of more cities]**
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a like if you like this project and kindly follow us using our social media handles
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank my learning partners, morning and standup team members, mentors and other friends who helped throughout the process. I would also like to appreciate [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) who prepared the original design
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
