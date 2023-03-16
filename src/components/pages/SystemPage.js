@@ -29,8 +29,8 @@ function SystemPage() {
       <p className="cat">3 stats</p>
       <p className='stats'>SYSTEM STATS</p>
       <ul>
-      <li className="even1 list first"><span>Sunrise</span> {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</li>
-      <li className="list"><span>Sunset</span> {new Date(data.sys.sunset * 1000).toLocaleTimeString()}</li>
+      <li className="even1 list first"><span>Sunrise</span> {new Date((data.sys.sunrise + 3 * 60 * 60) * 1000).toLocaleTimeString()}</li>
+      <li className="list"><span>Sunset</span> {new Date((data.sys.sunset + 3 * 60 * 60) * 1000).toLocaleTimeString()}</li>
       <li className="even1 list"><span>Last check</span> {new Date(data.dt * 1000).toLocaleTimeString()}</li>
       </ul>
 </div>
