@@ -46,31 +46,31 @@ function TemperaturePage() {
           <span>Max temp</span>
           {' '}
           <span>
-            {data.main.temp_max}
+            {Math.floor(data.main.temp_max - 273.15)}
             {' '}
-            K
+            &deg;C
           </span>
         </li>
         <li className="list">
           <span>Min temp</span>
           {' '}
-          {data.main.temp_min}
+          {Math.floor(data.main.temp_min - 273.15)}
           {' '}
-          K
+          &deg;C
         </li>
         <li className="even1 list">
           <span>Current temp</span>
           {' '}
-          {data.main.temp}
+          {Math.floor(data.main.temp - 273.15)}
           {' '}
-          K
+          &deg;C
         </li>
         <li className="list">
           <span>Feels like</span>
           {' '}
-          {data.main.feels_like}
+          {Math.floor(data.main.feels_like - 273.15)}
           {' '}
-          K
+          &deg;C
         </li>
         <li className="even1 list">
           <span>Humidity</span>

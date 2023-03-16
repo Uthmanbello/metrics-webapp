@@ -20,8 +20,8 @@ const About = () => (
       so you can make informed decisions about your day.
     </p>
     <h3>Contact us</h3>
-    <p>You can contact us via:</p>
-    <p>uthmanbello88@gmail.com</p>
+    <p>uthmanbelloimoukhuede@gmail.com</p>
+    <p>@UthmanDeRoyale</p>
   </div>
 );
 

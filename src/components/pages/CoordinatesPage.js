@@ -42,12 +42,12 @@ function CoordinatesPage() {
         <li className="even1 list first">
           <span>Latitude</span>
           {' '}
-          {data.coord.lat}
+          {data.coord && data.coord.lat ? data.coord.lat : ''}
         </li>
         <li className="list">
           <span>Longitude</span>
           {' '}
-          {data.coord.lon}
+          {data.coord && data.coord.lon ? data.coord.lon : ''}
         </li>
       </ul>
     </div>

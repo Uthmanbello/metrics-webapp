@@ -55,11 +55,11 @@
 
 ## 💻 Presentation <a name="presentation"></a>
 
-Click for presentation [Weather App Presentation](https://).
+Click for presentation [Weather App Presentation](https://www.loom.com/share/557c3d4066074f15b4021e9503fc7f3c).
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://)
+- [Live Demo Link](https://weather-app-1unw.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
