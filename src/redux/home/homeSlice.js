@@ -10,7 +10,7 @@ export const fetchCities = createAsyncThunk(
       const data = await response.json();
       return data;
     } catch (error) {
-      throw Error('Unable to fetch cities');
+      throw Error('Unable to fetch weather data');
     }
   },
 );
