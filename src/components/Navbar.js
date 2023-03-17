@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMicrophone, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
@@ -12,10 +13,10 @@ const Navbar = ({ searchTerm, handleSearch }) => {
 
   return (
     <nav className="nav">
-      <FontAwesomeIcon
+      <Link to="/about"><FontAwesomeIcon
         icon={faBars}
         style={{ fontSize: '20px', marginTop: '10px', marginLeft: '10px' }}
-      />
+      /></Link>
       <div>
         <FontAwesomeIcon
           icon={faMicrophone}

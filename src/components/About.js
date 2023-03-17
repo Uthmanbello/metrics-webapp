@@ -1,9 +1,11 @@
 import React from 'react';
-import Navbar1 from './Navbar1';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => (
   <div className="about">
-    <Navbar1 />
+    <Link to="/"><FontAwesomeIcon icon={faChevronLeft} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '10px' }}/></Link>
     <h1>About us</h1>
     <p>
       Welcome to our weather app! Here,
