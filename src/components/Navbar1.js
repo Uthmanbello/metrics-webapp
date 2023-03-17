@@ -6,11 +6,11 @@ import './Navbar.css'
 const Navbar1 = () => { 
   return (
     <nav className="nav">
-      <Link to="/"><FontAwesomeIcon icon={faChevronLeft} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '10px' }}/></Link>
+      <Link to="/"><FontAwesomeIcon icon={faChevronLeft} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '10px' }} data-testid="back-link"/></Link>
       <p className="top">details</p>
       <div>
-      <FontAwesomeIcon icon={faMicrophone} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '10px' }}/>
-      <FontAwesomeIcon icon={faGear} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '25px', paddingRight: '10px' }}/>
+      <FontAwesomeIcon icon={faMicrophone} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '10px' }} data-testid="microphone-icon"/>
+      <FontAwesomeIcon icon={faGear} style={{ fontSize: '20px', marginTop: '10px', marginLeft: '25px', paddingRight: '10px' }} data-testid="gear-icon"/>
       </div>
     </nav>
   )

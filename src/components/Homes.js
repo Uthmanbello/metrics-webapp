@@ -58,8 +58,6 @@ function Homes() {
       <div className="home-items">
         {filteredItems.map((item, index) => (
           <Link key={index} to={item.link}>
-          {/* <Link key={index} to={item.link} className={index === 0 ? "first-link" : ""}> */}
-          {/* <Link key={index} to={item.link} className={`link-${index}`}> */}
             {data[item.dataKey] && (
               <p className={`home-item link-${index} ${index % 2 === 0 ? '' : 'even'}`}>
                 <FontAwesomeIcon

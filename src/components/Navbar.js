@@ -29,7 +29,7 @@ const Navbar = ({ searchTerm, handleSearch }) => {
           onClick={toggleSearch} 
         />
         {showSearch && ( 
-          <input type="text" placeholder="Search categories" 
+          <input type="text" placeholder="Search categories"
           className="search-input" value={searchTerm} 
           onChange={handleSearch} />
         )}
