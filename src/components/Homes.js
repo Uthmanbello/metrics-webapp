@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf, faInfoCircle,
+  faMapMarkerAlt, faCloud, faWind, faSun, faThermometerHalf,
 } from '@fortawesome/free-solid-svg-icons';
 import { fetchCities } from '../redux/home/homeSlice';
 import './Homes.css';
@@ -32,7 +33,7 @@ function Homes() {
   return (
     <div>
       <div>
-        <Link to="/about"><FontAwesomeIcon icon={faInfoCircle} style={{ fontSize: '40px', marginBottom: '-30px', marginLeft: '10px' }} /></Link>
+        <Navbar />
         <h1 className="heading">Abuja, Nigeria</h1>
         <p className="cat">{`${((Math.floor(data.timezone / 3600)) >= 0 ? '+' : '-') + (Math.abs(Math.floor(data.timezone / 3600))).toString().padStart(2, '0')}.${Math.abs(Math.floor(data.timezone % (3600 / 60))).toString().padStart(2, '0')} UTC`}</p>
       </div>
@@ -44,7 +45,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faMapMarkerAlt}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
+                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -64,7 +65,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faCloud}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
+                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -84,7 +85,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faThermometerHalf}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
+                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -104,7 +105,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faWind}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
+                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">
@@ -124,7 +125,7 @@ function Homes() {
             <FontAwesomeIcon
               icon={faSun}
               style={{
-                color: 'rgb(53, 53, 165)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
+                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
               }}
             />
             <span className="item-wrap">

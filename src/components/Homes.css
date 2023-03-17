@@ -18,7 +18,7 @@
 .stats {
   display: flex;
   align-items: center;
-  background-color: rgb(68, 68, 206);
+  background-color: rgb(10, 108, 255);
   height: 30px;
   padding-left: 10px;
 }
@@ -33,7 +33,7 @@
 .home-item {
   height: 45vw;
   width: 50vw;
-  background-color: rgb(68, 68, 206);
+  background-color: rgb(10, 108, 255);
   display: flex;
   flex-direction: column;
   padding-left: 38px;
@@ -46,7 +46,7 @@
 }
 
 .even {
-  background-color: rgba(68, 68, 206, 0.466);
+  background-color: rgb(32, 121, 255);
 }
 
 a {
