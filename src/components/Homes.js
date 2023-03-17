@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
@@ -11,6 +11,7 @@ import './Homes.css';
 
 function Homes() {
   const dispatch = useDispatch();
+  const [searchTerm, setSearchTerm] = useState('');
   const { data, status, error } = useSelector((state) => state.home);
 
   useEffect(() => {
@@ -30,118 +31,68 @@ function Homes() {
     );
   }
 
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const filteredItems = [
+    { link: '/coordinates', dataKey: 'coord', label: 'Coordinates' },
+    { link: '/weather', dataKey: 'weather', label: 'Weather' },
+    { link: '/temperature', dataKey: 'main', label: 'Temperature' },
+    { link: '/wind', dataKey: 'wind', label: 'Wind' },
+    { link: '/system', dataKey: 'sys', label: 'System' },
+  ].filter((item) =>
+    item.label.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div>
       <div>
-        <Navbar />
+        <Navbar searchTerm={searchTerm} handleSearch={handleSearch} />
         <h1 className="heading">Abuja, Nigeria</h1>
-        <p className="cat">{`${((Math.floor(data.timezone / 3600)) >= 0 ? '+' : '-') + (Math.abs(Math.floor(data.timezone / 3600))).toString().padStart(2, '0')}.${Math.abs(Math.floor(data.timezone % (3600 / 60))).toString().padStart(2, '0')} UTC`}</p>
+        <p className="cat">{`${((Math.floor(data.timezone / 3600)) >= 0 ? '+' : '-')
+         + (Math.abs(Math.floor(data.timezone / 3600))).toString().padStart(2, '0')}.
+         ${Math.abs(Math.floor(data.timezone % (3600 / 60))).toString().padStart(2, '0')} UTC`}</p>
       </div>
       <p className="stats">STATS BY CATEGORY</p>
       <div className="home-items">
-        <Link to="/coordinates">
-          {data.coord && (
-          <p className="home-item">
-            <FontAwesomeIcon
-              icon={faMapMarkerAlt}
-              style={{
-                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
-              }}
-            />
-            <span className="item-wrap">
-              Coordinates
-              <span className="item">
-                {Object.keys(data.coord).length}
-                {' '}
-                items
-              </span>
-            </span>
-          </p>
-          )}
-        </Link>
-        <Link to="/weather">
-          {data.weather && data.weather[0] && (
-          <p className="home-item even">
-            <FontAwesomeIcon
-              icon={faCloud}
-              style={{
-                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
-              }}
-            />
-            <span className="item-wrap">
-              Weather
-              <span className="item">
-                {Object.keys(data.weather[0]).length}
-                {' '}
-                items
-              </span>
-            </span>
-          </p>
-          )}
-        </Link>
-        <Link to="/temperature">
-          {data.main && (
-          <p className="home-item even">
-            <FontAwesomeIcon
-              icon={faThermometerHalf}
-              style={{
-                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
-              }}
-            />
-            <span className="item-wrap">
-              Temperature
-              <span className="item">
-                {Object.keys(data.main).length}
-                {' '}
-                items
-              </span>
-            </span>
-          </p>
-          )}
-        </Link>
-        <Link to="/wind">
-          {data.wind && (
-          <p className="home-item">
-            <FontAwesomeIcon
-              icon={faWind}
-              style={{
-                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
-              }}
-            />
-            <span className="item-wrap">
-              Wind
-              <span className="item">
-                {Object.keys(data.wind).length}
-                {' '}
-                items
-              </span>
-            </span>
-          </p>
-          )}
-        </Link>
-        <Link to="/system">
-          {data.sys && (
-          <p className="home-item last">
-            <FontAwesomeIcon
-              icon={faSun}
-              style={{
-                color: 'rgb(0, 71, 177)', fontSize: '60px', marginBottom: '-80px', paddingTop: '15px',
-              }}
-            />
-            <span className="item-wrap">
-              System
-              <span className="item">
-                {Object.keys(data.sys).length}
-                {' '}
-                items
-              </span>
-            </span>
-          </p>
-          )}
-        </Link>
+        {filteredItems.map((item, index) => (
+          <Link key={index} to={item.link}>
+          {/* <Link key={index} to={item.link} className={index === 0 ? "first-link" : ""}> */}
+          {/* <Link key={index} to={item.link} className={`link-${index}`}> */}
+            {data[item.dataKey] && (
+              <p className={`home-item link-${index} ${index % 2 === 0 ? '' : 'even'}`}>
+                <FontAwesomeIcon
+                  icon={
+                    index === 0
+                      ? faMapMarkerAlt
+                      : index === 1
+                      ? faCloud
+                      : index === 2
+                      ? faThermometerHalf
+                      : index === 3
+                      ? faWind
+                      : faSun
+                  }
+                  style={{
+                    color: 'rgb(0, 71, 177)',
+                    fontSize: '60px',
+                    marginBottom: '-80px',
+                    paddingTop: '15px',
+                  }}
+                />
+                <span className="item-wrap">
+                  {item.label}
+                  <span className="item">
+                    {Object.keys(data[item.dataKey]).length} items
+                  </span>
+                </span>
+              </p>
+            )}
+          </Link>
+        ))}
       </div>
     </div>
   );
 }
-
 export default Homes;
