@@ -21,8 +21,8 @@ const initialState = {
   error: null,
 };
 
-const HomeSlice = createSlice({
-  name: 'cities',
+const homeSlice = createSlice({
+  name: 'home',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -41,4 +41,4 @@ const HomeSlice = createSlice({
   },
 });
 
-export default HomeSlice.reducer;
+export default homeSlice.reducer;

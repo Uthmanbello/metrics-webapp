@@ -9,24 +9,12 @@ import './Pages.css';
 
 function TemperaturePage() {
   const dispatch = useDispatch();
-  const { data, status, error } = useSelector((state) => state.home);
+  const { data } = useSelector((state) => state.home);
 
   useEffect(() => {
     dispatch(fetchCities());
   }, [dispatch]);
 
-  if (status === 'loading') {
-    return <div>Loading...</div>;
-  }
-
-  if (status === 'failed') {
-    return (
-      <div>
-        Error:
-        {error}
-      </div>
-    );
-  }
   return (
     <div>
       <div>

@@ -12,7 +12,7 @@ import './Homes.css';
 function Homes() {
   const dispatch = useDispatch();
   const [searchTerm, setSearchTerm] = useState('');
-  const { data, status, error } = useSelector((state) => state.home);
+  const { data, status, error } = useSelector((state) => state.home) || {};
 
   useEffect(() => {
     dispatch(fetchCities());
