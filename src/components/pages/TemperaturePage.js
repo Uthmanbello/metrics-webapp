@@ -1,40 +1,32 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
+import { faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
+import Navbar1 from '../Navbar1';
 
 import { fetchCities } from '../../redux/home/homeSlice';
 import './Pages.css';
 
 function TemperaturePage() {
   const dispatch = useDispatch();
-  const { data, status, error } = useSelector((state) => state.home);
+  const { data } = useSelector((state) => state.home);
 
   useEffect(() => {
     dispatch(fetchCities());
   }, [dispatch]);
 
-  if (status === 'loading') {
-    return <div>Loading...</div>;
-  }
-
-  if (status === 'failed') {
-    return (
-      <div>
-        Error:
-        {error}
-      </div>
-    );
-  }
   return (
     <div>
       <div>
-        <Link to="/" className="return"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+        <Navbar1 />
         <FontAwesomeIcon
           icon={faThermometerHalf}
           style={{
-            color: 'rgb(53, 53, 165)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
+            color: 'rgb(0, 71, 177)',
+            fontSize: '80px',
+            marginBottom: '-100px',
+            paddingTop: '15px',
+            paddingLeft: '40px',
           }}
         />
         <h2 className="heading">Temperature</h2>

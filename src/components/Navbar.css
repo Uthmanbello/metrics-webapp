@@ -1,0 +1,9 @@
+.nav {
+  background-color: rgb(10, 108, 255);
+  display: flex;
+  justify-content: space-between;
+}
+
+.top {
+  font-size: 1em;
+}
