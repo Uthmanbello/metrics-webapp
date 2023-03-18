@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Navbar1 from '../Navbar1';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
+import Navbar1 from '../Navbar1';
 
 import { fetchCities } from '../../redux/home/homeSlice';
 import './Pages.css';
@@ -22,8 +22,12 @@ function TemperaturePage() {
         <FontAwesomeIcon
           icon={faThermometerHalf}
           style={{
-            color: 'rgb(0, 71, 177)', fontSize: '80px', marginBottom: '-100px', paddingTop: '15px',
-            paddingLeft: '40px'}}
+            color: 'rgb(0, 71, 177)',
+            fontSize: '80px',
+            marginBottom: '-100px',
+            paddingTop: '15px',
+            paddingLeft: '40px',
+          }}
         />
         <h2 className="heading">Temperature</h2>
         <p className="cat">6 stats</p>

@@ -7,7 +7,7 @@ describe('NotFound component', () => {
     const { getByText } = render(
       <MemoryRouter>
         <NotFound />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(getByText('404 - Page Not Found')).toBeInTheDocument();
     expect(getByText('The page you are looking for could not be found.')).toBeInTheDocument();

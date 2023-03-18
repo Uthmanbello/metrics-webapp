@@ -10,7 +10,7 @@ describe('About', () => {
         <About />
       </MemoryRouter>,
     );
-    
+
     expect(getByText('About us')).toBeInTheDocument();
     expect(getByText(/Welcome to our weather app!/i)).toBeInTheDocument();
     expect(getByText(/Contact us/i)).toBeInTheDocument();
@@ -22,10 +22,10 @@ describe('About', () => {
         <About />
       </MemoryRouter>,
     );
-    
+
     const link = getByRole('link');
     expect(link).toHaveAttribute('href', '/');
-    
+
     const icon = link.querySelector('svg');
     expect(icon).toBeInTheDocument();
     expect(icon).toHaveClass('fa-chevron-left');

@@ -8,7 +8,7 @@ describe('Navbar1', () => {
     render(
       <BrowserRouter>
         <Navbar1 />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     const topElement = screen.getByText('details');
