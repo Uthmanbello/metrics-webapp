@@ -1,0 +1,90 @@
+.heading {
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.cat {
+  display: flex;
+  justify-content: right;
+  padding-right: 10px;
+  font-size: 1em;
+  margin-top: -16vw;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  background-color: rgb(10, 108, 255);
+  height: 30px;
+  padding-left: 10px;
+}
+
+.home-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.home-item {
+  height: 45vw;
+  width: 50vw;
+  background-color: rgb(32, 121, 255);
+  display: flex;
+  flex-direction: column;
+  padding-left: 38px;
+  font-size: 1.4em;
+  margin-top: -20px;
+}
+
+.link-0 {
+  background-color: rgb(10, 108, 255);
+  margin-top: -40px;
+}
+
+.link-1 {
+  background-color: rgb(32, 121, 255);
+  margin-top: -35px;
+}
+
+.link-2 {
+  background-color: rgb(32, 121, 255);
+}
+
+.link-3 {
+  background-color: rgb(10, 108, 255);
+}
+
+.link-4 {
+  background-color: rgb(10, 108, 255);
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  font-size: 1rem;
+}
+
+.item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 10px;
+  margin-top: 30vw;
+}
+
+.about {
+  padding: 10px;
+  font-size: 1em;
+  line-height: 2em;
+}

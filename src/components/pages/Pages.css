@@ -1,0 +1,23 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  background-color: rgb(10, 108, 255);
+  display: flex;
+  height: 15vw;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.even1 {
+  background-color: rgb(32, 121, 255);
+}
+
+.first {
+  margin-top: -20px;
+}
