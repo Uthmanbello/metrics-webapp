@@ -88,3 +88,30 @@ a {
   font-size: 1em;
   line-height: 2em;
 }
+
+@media only screen and (min-device-width: 768px) {
+  .heading {
+    margin-top: -10vh;
+    font-size: 4em;
+  }
+
+  .cat {
+    font-size: 2em;
+    padding-top: 5vh;
+  }
+
+  .stats {
+    font-size: 2em;
+  }
+
+  .home-item {
+    box-sizing: border-box;
+    font-size: 3em;
+    display: flex;
+    width: 49.2vw;
+  }
+
+  .icons {
+    font-size: 400px;
+  }
+}

@@ -64,6 +64,7 @@ function Homes() {
               {data[item.dataKey] ? (
                 <p className={`home-item link-${index} ${index % 2 === 0 ? '' : 'even'}`}>
                   <FontAwesomeIcon
+                    class="icons"
                     icon={
                       index === 0 ? faMapMarkerAlt
                         : index === 1 ? faCloud
