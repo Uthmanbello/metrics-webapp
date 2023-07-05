@@ -33,7 +33,7 @@
 
 # 📖 [Weather App] <a name="about-project"></a>
 
-**[Weather App]** is a project that uses a Single Page Application format to display items on a page. A user can access different weather information by simply clicking on the relevant category
+**[Weather App]** is a project that pulls from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide. Built with JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 -HTML
