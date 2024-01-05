@@ -59,7 +59,7 @@ Click for presentation [Weather App Presentation](https://www.loom.com/share/557
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://weather-app-1unw.onrender.com/)
+- [Live Demo Link](https://weather-update-app.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
